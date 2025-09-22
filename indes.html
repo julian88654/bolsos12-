@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda de Bolsos — 15 Productos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">B</div>
+      <div>
+        <h1>TiendaBolsos</h1>
+        <p>Catálogo de 15 bolsos</p>
+      </div>
+    </div>
+
+    <div class="search">
+      <input id="searchInput" placeholder="Buscar por modelo, color o marca..." />
+    </div>
+
+    <div class="actions">
+      <button class="btn">Categorías</button>
+      <button class="btn">Mi cuenta</button>
+      <button class="btn">Carrito (0)</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Ofertas de temporada</h2>
+        <p>Explora nuestra colección de bolsos.</p>
+        <div class="hero-image">Imagen promocional</div>
+      </div>
+
+   
+         
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="grid-controls">
+        <div><strong id="resultsCount">15</strong> resultados</div>
+        <div>
+          Ordenar por:
+          <select id="sortSelect" onchange="applySort()">
+            <option value="pop">Más populares</option>
+            <option value="priceAsc">Precio: menor a mayor</option>
+            <option value="priceDesc">Precio: mayor a menor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- 15 PRODUCTOS -->
+        <!-- SOLO CAMBIA EL NÚMERO DE BOLSO Y PRECIO -->
+        <!-- PRODUCTO 1 -->
+        <article class="card" data-title="Bolso modelo 1" data-desc="Bolso elegante negro" data-price="45">
+          <div class="thumb">
+            <img class="thumb-img" src="1.jpg" alt="Bolso 1">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 1</h3>
+          <div class="price">$45.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="diseño1.jpg" class="selected">
+            <img src="1.jpg">
+            <img src="img/bolso1-3.jpg">
+          </div>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="card" data-title="Bolso modelo 2" data-desc="Tote beige clásico" data-price="40">
+          <div class="thumb">
+            <img class="thumb-img" src="2.jpg" alt="Bolso 2">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 2</h3>
+          <div class="price">$60.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso2-1.jpg" class="selected">
+            <img src="img/bolso2-2.jpg">
+            <img src="img/bolso2-3.jpg">
+          </div>
+        </article>
+
+        <!-- PRODUCTO 3 -->
+        <article class="card" data-title="Bolso modelo 3" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="3.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 3</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+         <!-- PRODUCTO 4 -->
+        <article class="card" data-title="Bolso modelo 4" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="5.jpg" alt="Bolso 4">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 4</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 5 -->
+        <article class="card" data-title="Bolso modelo 5" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="6.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 5</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 6 -->
+        <article class="card" data-title="Bolso modelo 6" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 6</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 7 -->
+        <article class="card" data-title="Bolso modelo 7" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 7</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 8 -->
+        <article class="card" data-title="Bolso modelo 38" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 8</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 9 -->
+        <article class="card" data-title="Bolso modelo 9" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 9</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 10-->
+        <article class="card" data-title="Bolso modelo 10" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 10</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 11 -->
+        <article class="card" data-title="Bolso modelo 11" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 11</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 12 -->
+        <article class="card" data-title="Bolso modelo 12" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 12</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+        
+         <!-- PRODUCTO 13 -->
+        <article class="card" data-title="Bolso modelo 13" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 13</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 14 -->
+        <article class="card" data-title="Bolso modelo 14" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 14</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 15 -->
+        <article class="card" data-title="Bolso modelo 15" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 15</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 16 -->
+        <article class="card" data-title="Bolso modelo 16" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 16</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 17 -->
+        <article class="card" data-title="Bolso modelo 17" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 17</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 18 -->
+        <article class="card" data-title="Bolso modelo 18" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 18</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+ <!-- PRODUCTO 19-->
+        <article class="card" data-title="Bolso modelo 19" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 19</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 20 -->
+        <article class="card" data-title="Bolso modelo 20" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 20</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 21 -->
+        <article class="card" data-title="Bolso modelo 21" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 21</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 22 -->
+        <article class="card" data-title="Bolso modelo 22" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 22</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+
+         <!-- PRODUCTO 23 -->
+        <article class="card" data-title="Bolso modelo 23" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 23
+          </h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 24 -->
+        <article class="card" data-title="Bolso modelo 24" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 24</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 24 -->
+        <article class="card" data-title="Bolso modelo 24" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 24</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 25 -->
+        <article class="card" data-title="Bolso modelo 25" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 25</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 26 -->
+        <article class="card" data-title="Bolso modelo 26" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 26</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 27-->
+        <article class="card" data-title="Bolso modelo 27" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 27</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 28 -->
+        <article class="card" data-title="Bolso modelo 28" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 28</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 29 -->
+        <article class="card" data-title="Bolso modelo 29" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 29</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 30 -->
+        <article class="card" data-title="Bolso modelo 30" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 30</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 31 -->
+        <article class="card" data-title="Bolso modelo 31" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 31</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 32-->
+        <article class="card" data-title="Bolso modelo 32" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 32</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 33 -->
+        <article class="card" data-title="Bolso modelo 33" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 33</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 34 -->
+        <article class="card" data-title="Bolso modelo 34" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 34</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+
+        <!-- ... repite el mismo patrón hasta el producto 15 ... -->
+
+        <!-- PRODUCTO 35 -->
+        <article class="card" data-title="Bolso modelo 35" data-desc="Edición limitada azul" data-price="150">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso15-1.jpg" alt="Bolso 15">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 35</h3>
+          <div class="price">$150.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso15-1.jpg" class="selected">
+            <img src="img/bolso15-2.jpg">
+            <img src="img/bolso15-3.jpg">
+          </div>
+        </article>
+         <!-- PRODUCTO 36 -->
+        <article class="card" data-title="Bolso modelo 36" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 36</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 37 -->
+        <article class="card" data-title="Bolso modelo 37" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 37</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 38 -->
+        <article class="card" data-title="Bolso modelo 38" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 38</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 39 -->
+        <article class="card" data-title="Bolso modelo 39" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 39</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 40 -->
+        <article class="card" data-title="Bolso modelo 40" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 40</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+         <!-- PRODUCTO 41 -->
+        <article class="card" data-title="Bolso modelo 41" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 41</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 42 -->
+        <article class="card" data-title="Bolso modelo 42" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 42</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 43 -->
+        <article class="card" data-title="Bolso modelo 43" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 43</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 44 -->
+        <article class="card" data-title="Bolso modelo 44" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 44</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 45 -->
+        <article class="card" data-title="Bolso modelo 45" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 45</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 46 -->
+        <article class="card" data-title="Bolso modelo 46" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 46</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 47 -->
+        <article class="card" data-title="Bolso modelo 47" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 47</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 48 -->
+        <article class="card" data-title="Bolso modelo 48" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 48</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 49 -->
+        <article class="carrito" data-title="Bolso modelo 49" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 49</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 50 -->
+        <article class="card" data-title="Bolso modelo 50" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 50</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 51 -->
+        <article class="card" data-title="Bolso modelo 51" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 51</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+         <!-- PRODUCTO 52-->
+        <article class="card" data-title="Bolso modelo 52" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 3">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 52</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+        <var>
+           <!-- PRODUCTO 53 -->
+        <article class="card" data-title="Bolso modelo 53" data-desc="Crossbody rojo" data-price="55">
+          <div class="thumb">
+            <img class="thumb-img" src="img/bolso3-1.jpg" alt="Bolso 53">
+            <div class="fav">♡</div>
+          </div>
+          <h3 class="product-title">Bolso modelo 53</h3>
+          <div class="price">$55.00</div>
+          <div class="meta">Disponible · Envío 24-48h</div>
+          <div class="thumbnails">
+            <img src="img/bolso3-1.jpg" class="selected">
+            <img src="img/bolso3-2.jpg">
+            <img src="img/bolso3-3.jpg">
+          </div>
+        </article>
+
+
+          </div>
+        </article>
+
+        </var>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="year"></span> TiendaBolsos — Catálogo de 15 bolsos.
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div>
+        <img id="modalBigImg" src="" class="big" alt="Imagen grande">
+        <div style="display:flex;gap:8px;margin-top:10px" id="modalThumbs"></div>
+      </div>
+      <div class="info">
+        <div style="display:flex;align-items:center;gap:10px">
+          <h2 id="modalTitle" style="margin:0">Título del bolso</h2>
+          <button class="btn close" onclick="closeModal()">Cerrar</button>
+        </div>
+        <p id="modalPrice" style="font-weight:700;margin-top:8px">$0.00</p>
+        <p id="modalDesc" style="color:var(--muted)">Descripción amplia del producto...</p>
+        <div style="margin-top:10px"><button class="btn">Añadir al carrito</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
